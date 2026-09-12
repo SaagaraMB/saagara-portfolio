@@ -1,0 +1,47 @@
+---
+title: "Unified ML Pipeline for Lunar Terrain Age Determination"
+summary: "An end-to-end ML pipeline that classifies and clusters 1.3M+ lunar impact craters as a scalable alternative to manual crater-counting."
+status: "Complete"
+date: "2026-08-01"
+order: 1
+tags: ["Computer Vision", "Clustering", "ResNet-18", "Planetary Science"]
+---
+
+## Goal
+
+Lunar terrain age is traditionally estimated by manually counting impact
+craters — a slow, labor-intensive process. This project builds a scalable,
+automated alternative: a two-stage machine learning pipeline that first
+identifies genuine primary craters from a large, noisy catalog, then
+groups them into age-based clusters.
+
+## Approach
+
+1. **Classification** — a ResNet-18-based supervised model separates true
+   primary impact craters from secondary craters and catalog noise across
+   a dataset of 1.3M+ candidate craters, reaching **95.6% validation
+   accuracy** and isolating roughly **1.06M** primary craters.
+2. **Clustering** — the confirmed primary craters are grouped into
+   age-based clusters using an ensemble of unsupervised methods —
+   k-means, DBSCAN, HDBSCAN, and Gaussian Mixture Models — combined by
+   majority voting for robustness against any single algorithm's
+   assumptions, producing **4 age-based groups**.
+3. **Validation** — results are checked against known, named lunar
+   terrains with independently established ages, including Mare Imbrium
+   and Mare Frigoris.
+
+## Results
+
+The pipeline's age groupings align with the known relative ages of
+validated lunar terrains, supporting it as a scalable, reproducible
+alternative to manual crater-counting for large-scale lunar surface
+analysis. This work is the basis of a first-author paper currently under
+review at IAAI 2026.
+
+## My take
+
+This was the project where I first had to make an ML system hold up
+against ground truth I didn't control — the named lunar terrains either
+validated the pipeline or they didn't. That discipline — classify
+carefully, cluster robustly, then check against something real — is the
+same discipline I'm now applying to evaluating robot-learning policies.
