@@ -1,0 +1,54 @@
+---
+title: "A Unified ML Pipeline for Lunar Terrain Age Determination"
+summary: "An end-to-end ML pipeline that classifies and clusters 1.3M+ lunar impact craters as a scalable alternative to manual crater-counting."
+venue: "IAAI 2026 (under review)"
+year: "2026"
+role: "First author"
+date: "2026-08-01"
+order: 1
+---
+
+## Core idea
+
+Lunar terrain age is traditionally estimated by manually counting impact
+craters — a slow, labor-intensive process. This work builds a scalable,
+automated alternative: a two-stage machine learning pipeline that first
+identifies genuine primary craters from a large, noisy catalog, then
+groups them into age-based clusters.
+
+## Methodology
+
+1. **Classification** — a supervised model separates true primary impact
+   craters from secondary craters and catalog noise across a dataset of
+   1.3M+ candidate craters.
+2. **Clustering** — the confirmed primary craters are grouped into
+   age-based clusters using an ensemble of unsupervised methods, combined
+   by majority voting for robustness against any single algorithm's
+   assumptions.
+3. **Validation** — results are checked against known, named lunar
+   terrains with independently established ages, including Mare Imbrium
+   and Mare Frigoris.
+
+## Architecture
+
+- **Classifier:** a ResNet-18-based model, achieving **95.6% validation
+  accuracy** at identifying primary craters, isolating roughly **1.06M**
+  primary craters from the original 1.3M+ candidates.
+- **Clustering ensemble:** k-means, DBSCAN, HDBSCAN, and Gaussian Mixture
+  Models, combined via majority voting into **4 age-based groups**.
+
+## Results
+
+The pipeline's age groupings align with the known relative ages of
+validated lunar terrains, supporting it as a scalable, reproducible
+alternative to manual crater-counting for large-scale lunar surface
+analysis.
+
+## My take
+
+This project was where I first had to make an ML system hold up against
+ground truth I didn't control — the named lunar terrains either validated
+the pipeline or they didn't. That discipline — classify carefully, cluster
+robustly, then check against something real — is the same discipline I'm
+now applying to evaluating robot-learning policies: a benchmark only means
+something if the evaluation is honest.

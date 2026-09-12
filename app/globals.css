@@ -1,0 +1,74 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #faf8f4;
+  color: #211f1c;
+}
+
+::selection {
+  background-color: #f1e1d4;
+  color: #211f1c;
+}
+
+.prose-custom {
+  max-width: 42rem;
+}
+
+.prose-custom p {
+  margin-bottom: 1.1em;
+  line-height: 1.75;
+  color: #3a362f;
+}
+
+.prose-custom h2 {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  margin-top: 2em;
+  margin-bottom: 0.6em;
+  color: #211f1c;
+}
+
+.prose-custom h3 {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  margin-top: 1.6em;
+  margin-bottom: 0.5em;
+  color: #211f1c;
+}
+
+.prose-custom ul,
+.prose-custom ol {
+  margin: 1em 0 1.4em 1.3em;
+  color: #3a362f;
+}
+
+.prose-custom li {
+  margin-bottom: 0.4em;
+  line-height: 1.7;
+}
+
+.prose-custom a {
+  color: #b4653f;
+  text-underline-offset: 3px;
+}
+
+.prose-custom code {
+  background: #f1e1d4;
+  padding: 0.1em 0.4em;
+  border-radius: 4px;
+  font-size: 0.9em;
+}
+
+.prose-custom blockquote {
+  border-left: 3px solid #b4653f;
+  padding-left: 1em;
+  color: #5b564d;
+  font-style: italic;
+  margin: 1.4em 0;
+}
