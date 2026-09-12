@@ -1,0 +1,42 @@
+---
+title: "Pick-and-Place using SO-101"
+summary: "Fine-tuning and comparing ACT and SmolVLA on real teleoperated pick-and-place data, then extending the stronger policy with an RL stage."
+status: "In progress"
+date: "2026-09-12"
+order: 1
+tags: ["SO-101", "ACT", "SmolVLA", "Imitation Learning", "Reinforcement Learning"]
+---
+
+## Goal
+
+Build real, hands-on evidence of robot-learning fundamentals rather than
+another from-scratch simulation exercise: collect my own teleoperated
+demonstrations on a SO-101 arm, fine-tune two different policy
+architectures on the same dataset, and compare them honestly against a
+published reference benchmark.
+
+## Approach
+
+1. **Data collection** — teleoperated pick-and-place demonstrations across
+   varied object positions, angles, and lighting, aiming for 50+ clean
+   demos.
+2. **Policy fine-tuning** — fine-tune both **ACT** (Action Chunking
+   Transformer, a behavior-cloning policy) and **SmolVLA** (a genuine
+   vision-language-action model) on the same dataset, so the comparison
+   isolates architecture rather than data differences.
+3. **Evaluation** — run held-out trials for both policies and log results
+   honestly, including failure cases, benchmarked against a published
+   reference (SmolVLA vs. ACT results from Vizuara's Modern Robot Learning
+   Bootcamp).
+4. **RL Token phase** — extend the stronger policy by compressing its
+   fine-tuned embeddings into a compact token, then training an
+   actor-critic on top of it with sparse reward and corrective teleoperation
+   intervention — reproducing a technique from Physical Intelligence's
+   research.
+
+## Status
+
+This project is actively in progress. Once the evaluation and RL Token
+phases are complete, this page will be updated with real success-rate
+numbers, failure analysis, a short demo video, and a link to the GitHub
+repository.
