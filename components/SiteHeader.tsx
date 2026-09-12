@@ -3,9 +3,10 @@ import Link from "next/link";
 const NAV = [
   { href: "/", label: "About" },
   { href: "/projects", label: "Projects" },
-  { href: "/papers", label: "Papers" },
-  { href: "/blog", label: "Blog" },
   { href: "/contact", label: "Contact" },
+  // Papers and Blog are on hold for now — re-add here when ready:
+  // { href: "/papers", label: "Papers" },
+  // { href: "/blog", label: "Blog" },
 ];
 
 export default function SiteHeader() {
