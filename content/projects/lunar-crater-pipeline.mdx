@@ -1,10 +1,10 @@
 ---
 title: "Unified ML Pipeline for Lunar Terrain Age Determination"
-summary: "An end-to-end ML pipeline that classifies and clusters 1.3M+ lunar impact craters as a scalable alternative to manual crater-counting."
+summary: "An end-to-end ML pipeline that classifies and clusters 1.3M+ lunar impact craters into age-based clusters."
 status: "Complete"
 date: "2026-08-01"
 order: 1
-tags: ["Computer Vision", "Clustering", "ResNet-18", "Planetary Science"]
+tags: ["Computer Vision", "Unsupervised Learning", "CNN", "Planetary Science"]
 ---
 
 ## Goal
@@ -35,13 +35,4 @@ groups them into age-based clusters.
 The pipeline's age groupings align with the known relative ages of
 validated lunar terrains, supporting it as a scalable, reproducible
 alternative to manual crater-counting for large-scale lunar surface
-analysis. This work is the basis of a first-author paper currently under
-review at IAAI 2026.
-
-## My take
-
-This was the project where I first had to make an ML system hold up
-against ground truth I didn't control — the named lunar terrains either
-validated the pipeline or they didn't. That discipline — classify
-carefully, cluster robustly, then check against something real — is the
-same discipline I'm now applying to evaluating robot-learning policies.
+analysis.

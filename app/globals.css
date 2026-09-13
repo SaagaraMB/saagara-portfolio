@@ -72,3 +72,28 @@ body {
   font-style: italic;
   margin: 1.4em 0;
 }
+
+.prose-custom img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 12px;
+  border: 1px solid #e7e1d6;
+  margin: 1.8em 0;
+  display: block;
+}
+
+.prose-custom em:has(> img),
+.prose-custom p:has(> img:only-child) {
+  margin: 1.8em 0;
+}
+
+.prose-custom p:has(> img:only-child) + p em,
+.prose-custom figcaption {
+  display: block;
+  text-align: center;
+  font-size: 0.85em;
+  color: #8a8477;
+  margin-top: -1.2em;
+  margin-bottom: 1.8em;
+  font-style: italic;
+}
