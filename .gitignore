@@ -5,3 +5,7 @@ out
 .env*.local
 .DS_Store
 *.log
+next-env.d.ts
+*.stale
+*.stale*
+.next-dev

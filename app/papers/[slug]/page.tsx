@@ -46,11 +46,23 @@ export default function PaperPage({ params }: { params: { slug: string } }) {
             {entry.summary}
           </p>
         )}
-        {entry.role && (
-          <p className="mt-4 inline-block text-xs font-medium text-accent bg-accent-soft px-3 py-1 rounded-full">
-            {entry.role}
-          </p>
-        )}
+        <div className="mt-4 flex flex-wrap items-center gap-3">
+          {entry.role && (
+            <p className="inline-block text-xs font-medium text-accent bg-accent-soft px-3 py-1 rounded-full">
+              {entry.role}
+            </p>
+          )}
+          {typeof entry.url === "string" && (
+            <a
+              href={entry.url}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-accent hover:underline"
+            >
+              View Paper ↗
+            </a>
+          )}
+        </div>
       </div>
 
       <MDXBody source={entry.content} />

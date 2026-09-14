@@ -7,50 +7,34 @@ export default function ContactPage() {
         Contact
       </p>
       <h1 className="font-display text-3xl text-ink mb-6">Get in touch</h1>
-      <p className="max-w-prose text-ink2 leading-relaxed mb-10">
-        Happy to talk about robot learning, research, collaboration, or
-        opportunities in physical AI.
+      <p className="max-w-prose text-ink2 leading-relaxed">
+        Interested in research, collaboration, or interesting problems in AI
+        and robotics? Let&apos;s talk.
       </p>
-
-      <div className="space-y-4 max-w-prose">
-        <ContactRow label="Email" value="saagaramb@gmail.com" href="mailto:saagaramb@gmail.com" />
-        <ContactRow
-          label="LinkedIn"
-          value="linkedin.com/in/saagara-mb"
-          href="https://www.linkedin.com/in/saagara-mb"
-        />
-        <ContactRow label="Location" value="Trivandrum, Kerala, India" />
-      </div>
-    </div>
-  );
-}
-
-function ContactRow({
-  label,
-  value,
-  href,
-}: {
-  label: string;
-  value: string;
-  href?: string;
-}) {
-  return (
-    <div className="flex items-center gap-4 p-4 rounded-xl border border-line bg-white/60">
-      <span className="font-mono text-[11px] uppercase tracking-wide text-ink3 w-20 shrink-0">
-        {label}
-      </span>
-      {href ? (
+      <div className="mt-5 flex flex-wrap gap-x-6 gap-y-2 text-sm">
         <a
-          href={href}
-          target={href.startsWith("http") ? "_blank" : undefined}
-          rel="noopener noreferrer"
-          className="text-ink hover:text-accent transition-colors"
+          href="mailto:saagaramb@gmail.com"
+          className="text-accent hover:underline"
         >
-          {value}
+          saagaramb@gmail.com
         </a>
-      ) : (
-        <span className="text-ink">{value}</span>
-      )}
+        <a
+          href="https://www.linkedin.com/in/saagara-mb"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+        >
+          LinkedIn
+        </a>
+        <a
+          href="https://scholar.google.com/citations?view_op=list_works&hl=en&user=IEDxJ34AAAAJ"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-accent hover:underline"
+        >
+          Google Scholar
+        </a>
+      </div>
     </div>
   );
 }

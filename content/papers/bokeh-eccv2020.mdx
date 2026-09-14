@@ -4,6 +4,7 @@ summary: "Team submission to the AIM 2020 challenge on synthesizing realistic sh
 venue: "ECCV 2020 Workshops (AIM)"
 year: "2020"
 role: "Co-author, ranked 6th"
+url: "https://link.springer.com/chapter/10.1007/978-3-030-67070-2_13"
 date: "2020-08-01"
 order: 2
 ---
@@ -15,17 +16,23 @@ synthesizing realistic shallow-depth-of-field ("bokeh") images from
 regular all-in-focus photos — a hard image-to-image translation problem
 requiring accurate depth-aware blur.
 
+## Approach
+
+The team proposed a modified U-Net architecture for the task. Compared to
+the original U-Net, the max-pooling downsampling operation was replaced
+with a strided convolution layer, and the feature maps from the shortcut
+(skip) connections are concatenated before applying the activation
+function in the decoder module. Leaky ReLU activations are used
+throughout the convolutional layers, and the entire model is trained
+end-to-end to minimize mean absolute error (MAE) loss using the Adam
+optimizer.
+
 ## My contribution
 
-I was part of the team behind this submission during my undergraduate
-research work in the Computer Vision Lab under Dr. Jiji C V. The team's
+I was part of a 2-member team behind this submission during my
+undergraduate research work in the Computer Vision Lab under [Dr. Jiji C V](https://www.linkedin.com/in/jiji-c-v-4ab00a40/). Our
 entry was evaluated against other international submissions on the
 official challenge benchmark and **ranked 6th**.
 
-## My take
-
-This was an early lesson in working against a fixed, external benchmark
-rather than a self-defined one — the challenge's scoring didn't care about
-intent, only measured output quality. That same standard — let the
-benchmark judge the work, not the write-up — is one I still hold my
-current robot-learning evaluations to.
+Published as a chapter in *Computer Vision – ECCV 2020 Workshops*
+(Springer, Cham), pp. 213–228. [DOI: 10.1007/978-3-030-67070-2_13](https://link.springer.com/chapter/10.1007/978-3-030-67070-2_13)
