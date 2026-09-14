@@ -14,6 +14,10 @@ export interface ContentMeta {
   status?: string; // e.g. "in progress", "complete"
   tags?: string[];
   order?: number;
+  role?: string;
+  venue?: string;
+  year?: string;
+  url?: string;
   [key: string]: unknown;
 }
 
