@@ -27,9 +27,14 @@ export default function ProjectsPage() {
         <h2 className="font-display text-xl text-ink mb-5">Computer Vision</h2>
         <div className="space-y-5">
           <div className="p-6 rounded-2xl border border-line bg-white/60">
-            <h3 className="font-display text-xl text-ink mb-2">
-              Low-Light Face Detection
-            </h3>
+            <div className="flex items-center flex-wrap gap-2 mb-2">
+              <h3 className="font-display text-xl text-ink">
+                Low-Light Face Detection
+              </h3>
+              <span className="font-mono text-[10px] tracking-wide uppercase px-2 py-0.5 rounded-full bg-accent-soft text-accent">
+                Complete
+              </span>
+            </div>
             <p className="text-ink2 leading-relaxed">
               A DETR-based object detection model for low-light face
               detection, developed while competing in international computer
@@ -40,9 +45,14 @@ export default function ProjectsPage() {
             href={`/papers/${bokehPaper.slug}`}
             className="block p-6 rounded-2xl border border-line bg-white/60 hover:border-accent transition-colors"
           >
-            <h3 className="font-display text-xl text-ink mb-2">
-              {bokehPaper.title}
-            </h3>
+            <div className="flex items-center flex-wrap gap-2 mb-2">
+              <h3 className="font-display text-xl text-ink">
+                {bokehPaper.title}
+              </h3>
+              <span className="font-mono text-[10px] tracking-wide uppercase px-2 py-0.5 rounded-full bg-accent-soft text-accent">
+                Complete
+              </span>
+            </div>
             <p className="text-ink2 leading-relaxed">{bokehPaper.summary}</p>
           </Link>
           <ProjectCard entry={craterProject} />
