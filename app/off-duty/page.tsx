@@ -50,11 +50,11 @@ export default function OffDutyPage() {
         <div className="grid sm:grid-cols-2 gap-5">
           <PlaceholderCard
             title="English poems"
-            body="A collection of poems written in English."
+            body="Procrastinating typing them out."
           />
           <PlaceholderCard
             title="Malayalam poems"
-            body="Poems written in Malayalam."
+            body="Again, procrastinating."
           />
         </div>
       </section>
@@ -62,7 +62,10 @@ export default function OffDutyPage() {
       {/* Music */}
       <section className="pb-14 border-t border-line pt-10">
         <h2 className="font-display text-xl text-ink mb-5">Music</h2>
-        <PlaceholderCard title="A song in Tamil" body="A song, in Tamil." />
+        <PlaceholderCard
+          title="A song in Tamil"
+          body="Wrote lyrics and composed the tune; currently trying to get it sung by someone who is not a terrible singer (unlike me). Hey, feel free to reach out if you want to sing this for me."
+        />
       </section>
     </div>
   );
