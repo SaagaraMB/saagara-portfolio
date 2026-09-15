@@ -38,7 +38,8 @@ export default function OffDutyPage() {
             Swatch & Sketch
           </h3>
           <p className="text-sm text-ink2 leading-relaxed">
-            My Instagram page for drawings and sketches.
+            My Instagram page for drawings and sketches. They are unusually
+            childlike.
           </p>
           <p className="mt-3 text-sm text-accent">@swatchandsketch ↗</p>
         </a>
