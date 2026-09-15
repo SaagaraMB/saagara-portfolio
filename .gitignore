@@ -9,3 +9,4 @@ next-env.d.ts
 *.stale
 *.stale*
 .next-dev
+tsconfig.tsbuildinfo

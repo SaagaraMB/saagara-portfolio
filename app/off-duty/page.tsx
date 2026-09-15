@@ -6,10 +6,24 @@ export default function OffDutyPage() {
       <p className="font-mono text-xs tracking-widest uppercase text-accent mb-3">
         Off Duty
       </p>
-      <h1 className="font-display text-3xl text-ink mb-6">Beyond the work</h1>
-      <p className="max-w-prose text-ink2 leading-relaxed mb-12">
-        Art, poetry, and music alongside the research.
-      </p>
+      <h1 className="font-display text-3xl text-ink mb-6">
+        Beyond Tech and Research
+      </h1>
+      <div className="max-w-prose space-y-4 text-ink2 leading-relaxed mb-12">
+        <p>
+          Here&apos;s a glimpse into other parts of me. I honestly believe
+          that the creative side of me is what fuels my scientific
+          curiosity. When not building tech stuff, I draw sketches, write
+          poems, and make songs (mostly in my head; it starts with a tune
+          that&apos;s a stubborn earworm, and I fill in the lines on the
+          go). The banner in my profile (yup, the cute winking, saluting
+          robots) is one of my sketches.
+        </p>
+        <p>
+          Wanted to add this here, as I am not complete without these
+          quirky creative bits.
+        </p>
+      </div>
 
       {/* Artwork */}
       <section className="pb-14 border-t border-line pt-10">
