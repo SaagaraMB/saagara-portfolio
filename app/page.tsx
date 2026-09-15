@@ -24,8 +24,9 @@ export default function HomePage() {
               Physical Intelligence · Computer Vision · Robot Learning
             </h1>
             <p className="mt-6 max-w-prose text-ink2 leading-relaxed">
-              Building physical AI that can perceive, learn, reason, and act
-              in the physical world.
+              Building physical AI systems that can perceive, learn, reason,
+              and act in the physical world — robots that can be absolutely
+              delightful and obviously helpful.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
