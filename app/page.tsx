@@ -170,7 +170,11 @@ export default function HomePage() {
           </p>
           <p>
             My background is in applied electronics and instrumentation
-            engineering, software engineering, and computer vision research.
+            engineering, software engineering, and computer vision research
+            — a combination that maps directly onto what physical AI
+            demands: sensing and interfacing with real hardware, perceiving
+            the world through vision, and engineering it all into systems
+            that hold up outside a simulator.
           </p>
           <p>
             I am currently exploring robot learning, world models,
