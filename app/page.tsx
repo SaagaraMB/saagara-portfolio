@@ -66,9 +66,8 @@ export default function HomePage() {
             SO-101 Robot Learning
           </h3>
           <p className="text-sm text-ink2 leading-relaxed">
-            Hands-on exploration of robot learning, imitation learning, and
-            vision-based control using a SO-101 robot arm for manipulation
-            tasks.
+            Investigating imitation learning and vision-language-action
+            policies for real-world manipulation.
           </p>
         </div>
       </section>
