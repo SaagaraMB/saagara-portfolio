@@ -233,7 +233,7 @@ export default function HomePage() {
               <>
                 University of Kerala, Geology Department (under{" "}
                 <a
-                  href="https://in.linkedin.com/in/sajinkumar-ks-66223768"
+                  href="https://sajinkumar.com/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="underline underline-offset-2 hover:text-accent"
