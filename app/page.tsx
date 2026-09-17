@@ -227,7 +227,7 @@ export default function HomePage() {
             body="Full-time, focused work on robot learning fundamentals and a small number of rigorous, well-documented hardware projects."
           />
           <TimelineRow
-            when="Feb 2024 — Present"
+            when="June 2025 — Present"
             what="Research Assistant"
             where={
               <>
