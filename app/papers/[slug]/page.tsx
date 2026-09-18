@@ -62,6 +62,16 @@ export default function PaperPage({ params }: { params: { slug: string } }) {
               View Paper ↗
             </a>
           )}
+          {typeof entry.pdf === "string" && (
+            <a
+              href={entry.pdf}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="text-sm text-accent hover:underline"
+            >
+              Download PDF ↗
+            </a>
+          )}
         </div>
       </div>
 

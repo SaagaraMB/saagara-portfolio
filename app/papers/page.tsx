@@ -42,6 +42,16 @@ export default function PapersPage() {
                   View Paper ↗
                 </a>
               )}
+              {typeof p.pdf === "string" && (
+                <a
+                  href={p.pdf}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="text-xs text-accent hover:underline"
+                >
+                  Download PDF ↗
+                </a>
+              )}
             </div>
           </div>
         ))}

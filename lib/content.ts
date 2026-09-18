@@ -18,6 +18,7 @@ export interface ContentMeta {
   venue?: string;
   year?: string;
   url?: string;
+  pdf?: string;
   [key: string]: unknown;
 }
 
