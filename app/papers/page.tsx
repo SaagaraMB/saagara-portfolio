@@ -8,9 +8,6 @@ export default function PapersPage() {
 
   return (
     <div className="mx-auto max-w-site px-6 sm:px-8 py-14">
-      <p className="font-mono text-xs tracking-widest uppercase text-accent mb-3">
-        Papers as posters
-      </p>
       <h1 className="font-display text-3xl text-ink mb-12">Research papers</h1>
 
       <div className="grid sm:grid-cols-2 gap-5">
